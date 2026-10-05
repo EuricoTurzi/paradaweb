@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background: url("{% static 'images/login.gif' %}") no-repeat center center fixed;
+  background: #1a1a2e url("{% static 'images/fundo.png' %}") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -140,4 +140,7 @@ body {
     </div>
   </div>
 </div>
+
+<!-- Impede envio duplicado do formulário -->
+<script src="{% static 'js/prevent-double-submit.js' %}"></script>
 {% endblock %}
